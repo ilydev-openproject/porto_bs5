@@ -1,0 +1,24 @@
+@import "font";
+@mixin button {
+  font-family: "sofia";
+  font-size: 16px;
+  padding: 12px 36px;
+  background: #cbcbcb;
+  border: none;
+  text-wrap: nowrap;
+  &:hover {
+    background: #9d9d9d;
+  }
+}
+
+.mybtn {
+  @include button();
+}
+.mybtn-md {
+  @include button();
+  font-size: 20px;
+}
+.mybtn-lg {
+  @include button();
+  font-size: 24px;
+}

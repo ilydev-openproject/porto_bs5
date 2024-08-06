@@ -1,0 +1,472 @@
+@font-face {
+  font-family: "sofia";
+  src: url("/font/sofia-pro/Sofia Pro Regular Az.otf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "sofia";
+  src: url("/font/sofia-pro/Sofia Pro Medium Az.otf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "sofia";
+  src: url("/font/sofia-pro/Sofia Pro Semi Bold Az.otf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "sofia";
+  src: url("/font/sofia-pro/Sofia Pro Bold Az.otf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "sofia";
+  src: url("/font/sofia-pro/Sofia Pro Black Az.otf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "sofia";
+  src: url("/font/sofia-pro/Sofia Pro Regular Az.otf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+.mybtn {
+  font-family: "sofia";
+  font-size: 16px;
+  padding: 12px 36px;
+  background: #cbcbcb;
+  border: none;
+  text-wrap: nowrap;
+}
+.mybtn:hover {
+  background: #9d9d9d;
+}
+
+.mybtn-md {
+  font-family: "sofia";
+  font-size: 16px;
+  padding: 12px 36px;
+  background: #cbcbcb;
+  border: none;
+  text-wrap: nowrap;
+  font-size: 20px;
+}
+.mybtn-md:hover {
+  background: #9d9d9d;
+}
+
+.mybtn-lg {
+  font-family: "sofia";
+  font-size: 16px;
+  padding: 12px 36px;
+  background: #cbcbcb;
+  border: none;
+  text-wrap: nowrap;
+  font-size: 24px;
+}
+.mybtn-lg:hover {
+  background: #9d9d9d;
+}
+
+@font-face {
+  font-family: "sofia";
+  src: url("/font/sofia-pro/Sofia Pro Regular Az.otf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "sofia";
+  src: url("/font/sofia-pro/Sofia Pro Medium Az.otf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "sofia";
+  src: url("/font/sofia-pro/Sofia Pro Semi Bold Az.otf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "sofia";
+  src: url("/font/sofia-pro/Sofia Pro Bold Az.otf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "sofia";
+  src: url("/font/sofia-pro/Sofia Pro Black Az.otf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "sofia";
+  src: url("/font/sofia-pro/Sofia Pro Regular Az.otf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 80px;
+  z-index: 100000;
+  background: transparent;
+}
+.navbar .navbar-brand {
+  font-family: "sofia";
+  font-size: 38px;
+  font-weight: 900;
+}
+.navbar .nav-link {
+  font-family: "sofia";
+  font-size: 16px;
+  color: #cbcbcb;
+}
+
+@media screen and (max-width: 992px) {
+  section {
+    height: auto !important;
+  }
+}
+.hero {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.hero .bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .bg img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center bottom;
+     object-position: center bottom;
+  filter: brightness(30%);
+}
+@media screen and (max-width: 992px) {
+  .hero .bg img {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.hero-content {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: 5;
+}
+.hero-content h2 {
+  font-family: "sofia";
+  color: #cbcbcb;
+  font-size: 37px;
+}
+.hero-content h1 {
+  font-family: "sofia";
+  font-weight: 700;
+  font-size: 60px;
+  color: #cbcbcb;
+}
+.hero-content p {
+  font-family: "sofia";
+  color: #cbcbcb;
+}
+.hero-content .tag-grb {
+  position: relative;
+  font-family: "sofia";
+  color: #cbcbcb;
+  font-size: 13px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.hero-content .tag-grb img {
+  width: auto;
+  height: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.hero-content .tag-grb .stack {
+  background: #303030;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.hero-content .tag-grb .stack::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 105%;
+  height: 105%;
+  background: linear-gradient(90deg, #ffb933 0%, #8c12a2 100%);
+  filter: blur(10px);
+  z-index: -1;
+  opacity: 0;
+}
+.hero-content .tag-grb .stack:hover::after {
+  opacity: 1;
+}
+@keyframes border {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(100%);
+  }
+}
+
+main {
+  position: relative;
+}
+
+.sec2 {
+  height: 100vh;
+  background: #000;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.sec2 .avatar {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(/img/wall.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 5;
+  -o-object-position: bottom center;
+     object-position: bottom center;
+}
+.sec2 .avatar::after {
+  -webkit-backdrop-filter: brightness(40%);
+          backdrop-filter: brightness(40%);
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(41.89% 41.89% at 50.07% 58.11%, rgba(48, 48, 48, 0) 30.8%, #000 100%);
+  -o-object-position: center;
+     object-position: center;
+  z-index: 5;
+}
+.sec2 .avatar .tali {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5px;
+  height: 10%;
+  background: linear-gradient(270deg, #000 0%, #666 100%);
+}
+.sec2 .avatar .hanging {
+  position: absolute;
+  content: "";
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+.sec2 .avatar .light {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-clip-path: polygon(40% 10%, 0% 100%, 100% 100%, 60% 10%, 0% 10%);
+          clip-path: polygon(40% 10%, 0% 100%, 100% 100%, 60% 10%, 0% 10%);
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(213, 201, 139, 0.1) 0%, rgba(111, 105, 72, 0) 100%);
+  opacity: 0;
+}
+.sec2 .avatar .light::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit; /* Inherit the background from the parent element */
+  filter: blur(50px); /* Adjust the blur value as needed */
+}
+.sec2 .avatar img {
+  position: relative;
+  bottom: 10%;
+  z-index: 6;
+  width: auto;
+  height: 60%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+  filter: brightness(20%);
+}
+.sec2 .avatar .saklar {
+  position: absolute;
+  top: 30%;
+  right: 50px;
+  transform: translateY(-50%);
+  width: 100px;
+  height: 50px;
+  background-color: #212121;
+  z-index: 10;
+  padding: 0;
+  margin: 0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: brightness(50%);
+  border: 1px solid #e032ff;
+  padding: 2px;
+}
+.sec2 .avatar .saklar label {
+  position: relative;
+  top: -100%;
+  left: 0;
+  font-family: "sofia";
+  color: #cbcbcb;
+  font-size: 20px;
+}
+.sec2 .avatar .saklar input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 10;
+  opacity: 0;
+}
+.sec2 .avatar .saklar span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 48px;
+  height: 48px;
+  background-color: #333;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 9;
+  transition: left 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec2 .avatar .saklar span ion-icon {
+  color: #e032ff;
+  font-size: 20px;
+  font-weight: 800;
+  transition: filter 0.3s ease-in-out;
+}
+.sec2 .avatar .saklar input:checked + span {
+  left: 50px;
+}
+.sec2 .avatar .saklar input:checked + span ion-icon {
+  filter: drop-shadow(0 0 5px #e032ff) drop-shadow(0 0 10px #e032ff) drop-shadow(0 0 15px #e032ff);
+  color: #e032ff;
+}
+.sec2 .avatar .saklar:hover {
+  filter: brightness(100%);
+}
+.sec2 .active img {
+  filter: brightness(100%);
+}
+.sec2 .active .light {
+  opacity: 1;
+}
+.sec2 .active::after {
+  -webkit-backdrop-filter: brightness(100%);
+          backdrop-filter: brightness(100%);
+}
+.sec2 .active .hanging svg circle {
+  fill: #f9f5ce;
+}
+.sec2 .toggle h2 {
+  font-family: "sofia";
+  font-size: 48px;
+  font-weight: 600;
+  color: #cbcbcb;
+}
+.sec2 .toggle #transcript {
+  font-family: "sofia";
+  font-size: 29px;
+  font-weight: 400;
+  color: #cbcbcb;
+}
+.sec2 .toggle p {
+  font-family: "sofia";
+  font-size: 18px;
+  font-weight: 400;
+  position: relative;
+  overflow: hidden;
+  white-space: normal;
+}
+.sec2 .toggle p .text-container {
+  position: relative;
+  z-index: 1;
+}
+.sec2 .toggle p .text-container::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #cbcbcb;
+  white-space: normal;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: block;
+  animation: txt 10s ease-in-out forwards;
+  -webkit-clip-path: inset(0 0 100% 0);
+          clip-path: inset(0 0 100% 0);
+}
+@keyframes txt {
+  0% {
+    -webkit-clip-path: inset(0 0 100% 0);
+            clip-path: inset(0 0 100% 0);
+  }
+  100% {
+    -webkit-clip-path: inset(0 0 0 0);
+            clip-path: inset(0 0 0 0);
+  }
+}
+.sec2 .active p {
+  color: transparent;
+  background-color: #cbcbcb; /* Mengubah background-image menjadi background-color */
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: colorChange 1s ease-in-out;
+}
+@keyframes colorChange {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
