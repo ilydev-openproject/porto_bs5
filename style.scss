@@ -1,6 +1,9 @@
 @import "button";
 @import "font";
 
+body {
+  font-family: "Roboto", sans-serif;
+}
 .navbar {
   position: absolute;
   top: 0;
@@ -11,12 +14,12 @@
   z-index: 100000;
   background: transparent;
   .navbar-brand {
-    font-family: "sofia";
+    font-family: "Roboto", sans-serif;
     font-size: 38px;
     font-weight: 900;
   }
   .nav-link {
-    @include font-sofia();
+    @include roboto();
     font-size: 16px;
     color: #cbcbcb;
   }
@@ -58,23 +61,23 @@
   position: relative;
   z-index: 5;
   h2 {
-    @include font-sofia();
+    @include roboto();
     color: #cbcbcb;
     font-size: 37px;
   }
   h1 {
-    @include font-sofia();
+    @include roboto();
     font-weight: 700;
     font-size: 60px;
     color: #cbcbcb;
   }
   p {
-    @include font-sofia();
+    @include roboto();
     color: #cbcbcb;
   }
   .tag-grb {
     position: relative;
-    @include font-sofia();
+    @include roboto();
     color: #cbcbcb;
     font-size: 13px;
     display: flex;
@@ -223,7 +226,7 @@ main {
         position: relative;
         top: -100%;
         left: 0;
-        @include font-sofia();
+        @include roboto();
         color: #cbcbcb;
         font-size: 20px;
       }
@@ -297,19 +300,19 @@ main {
   }
   .toggle {
     h2 {
-      font-family: "sofia";
+      font-family: "Roboto", sans-serif;
       font-size: 48px;
       font-weight: 600;
       color: #cbcbcb;
     }
     #transcript {
-      font-family: "sofia";
+      font-family: "Roboto", sans-serif;
       font-size: 29px;
       font-weight: 400;
       color: #cbcbcb;
     }
     p {
-      font-family: "sofia";
+      font-family: "Roboto", sans-serif;
       font-size: 18px;
       font-weight: 400;
       position: relative;
