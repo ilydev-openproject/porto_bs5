@@ -3,8 +3,10 @@
   font-size: 16px;
   padding: 12px 36px;
   background: #cbcbcb;
+  color: #001213;
   border: none;
   text-wrap: nowrap;
+  cursor: pointer !important;
 }
 .mybtn:hover {
   background: #9d9d9d;
@@ -15,8 +17,10 @@
   font-size: 16px;
   padding: 12px 36px;
   background: #cbcbcb;
+  color: #001213;
   border: none;
   text-wrap: nowrap;
+  cursor: pointer !important;
   font-size: 20px;
 }
 .mybtn-md:hover {
@@ -28,8 +32,10 @@
   font-size: 16px;
   padding: 12px 36px;
   background: #cbcbcb;
+  color: #001213;
   border: none;
   text-wrap: nowrap;
+  cursor: pointer !important;
   font-size: 24px;
 }
 .mybtn-lg:hover {
@@ -38,6 +44,13 @@
 
 body {
   font-family: "Roboto", sans-serif;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .navbar {
@@ -65,11 +78,16 @@ body {
   section {
     height: auto !important;
   }
+  .navbar {
+    position: relative;
+    transform: 0;
+    height: 100%;
+  }
 }
 .hero {
   overflow: hidden;
   position: relative;
-  z-index: 1;
+  z-index: 3;
 }
 .hero .bg {
   position: absolute;
@@ -170,18 +188,54 @@ main {
   position: relative;
 }
 
+section {
+  min-height: 100vh;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .sec2 {
   height: 100vh;
-  background: #000;
+  background: #001213;
   width: 100%;
   position: relative;
   z-index: 1;
+  overflow: hidden;
+}
+.sec2::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  transform: translate(50%, -20%);
+  width: 80vh;
+  height: 80vh;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(227, 67, 255, 0.5) 0%, rgba(136, 40, 153, 0) 100%);
+  border-radius: 50%;
+  z-index: 2 !important;
+}
+.sec2::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  transform: translate(-50%, 50%);
+  width: 80vh;
+  height: 80vh;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(255, 98, 173, 0.5) 0%, rgba(170, 55, 110, 0) 100%);
+  border-radius: 50%;
+  z-index: 6 !important;
 }
 .sec2 .avatar {
   position: relative;
   width: 100%;
   height: 100%;
-  background: url(/img/wall.png);
+  background: url(../../img/wall.png);
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 5;
@@ -197,7 +251,7 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(41.89% 41.89% at 50.07% 58.11%, rgba(48, 48, 48, 0) 30.8%, #000 100%);
+  background: radial-gradient(41.89% 41.89% at 50.07% 58.11%, rgba(48, 48, 48, 0) 30.8%, #001213 100%);
   -o-object-position: center;
      object-position: center;
   z-index: 5;
@@ -209,7 +263,7 @@ main {
   transform: translateX(-50%);
   width: 5px;
   height: 10%;
-  background: linear-gradient(270deg, #000 0%, #666 100%);
+  background: linear-gradient(270deg, #001213 0%, #666 100%);
 }
 .sec2 .avatar .hanging {
   position: absolute;
@@ -340,7 +394,7 @@ main {
 }
 .sec2 .toggle h2 {
   font-family: "Roboto", sans-serif;
-  font-size: 48px;
+  font-size: 28px;
   font-weight: 600;
   color: #cbcbcb;
 }
@@ -352,7 +406,7 @@ main {
 }
 .sec2 .toggle p {
   font-family: "Roboto", sans-serif;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 400;
   position: relative;
   overflow: hidden;
@@ -401,4 +455,65 @@ main {
   100% {
     background-position: 100%;
   }
+}
+
+.portofolio .heading h2 {
+  font-size: 48px;
+  font-family: "Roboto", sans-serif;
+}
+.portofolio .card {
+  overflow: hidden;
+  height: 200px;
+  position: relative;
+}
+.portofolio .card .card-body:hover {
+  transition: all 0.5s ease-in-out;
+}
+.portofolio .card .card-body:hover img {
+  scale: 1.2;
+}
+.portofolio .card .card-body:hover .card-text {
+  opacity: 1;
+}
+.portofolio .card .card-body img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  scale: 1;
+  transition: all 0.5s ease-in-out;
+}
+.portofolio .card .card-body .card-text {
+  background: rgba(23, 23, 23, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.portofolio .card .card-body .card-text span {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 5000;
+  margin-bottom: 12px;
+}
+.portofolio .card .card-body .card-text a {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  padding: 12px 36px;
+  background: #cbcbcb;
+  color: #001213;
+  border: none;
+  text-wrap: nowrap;
+  cursor: pointer !important;
+}
+.portofolio .card .card-body .card-text a:hover {
+  background: #9d9d9d;
 }
