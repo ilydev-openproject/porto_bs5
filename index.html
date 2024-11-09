@@ -15,6 +15,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
     <!-- locomotive -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" />
+
+    <!-- icon -->
+    <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
@@ -31,231 +34,777 @@
           <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
               <li class="nav-item me-3">
-                <a class="nav-link" href="#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+                <a class="nav-link" href="#home" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
               </li>
               <li class="nav-item me-3">
                 <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item me-3">
-                <a class="nav-link" href="#">Portofolio</a>
+                <a class="nav-link" href="#portofolio">Portofolio</a>
               </li>
               <li class="nav-item me-3">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-      <main data-scroll-container>
-        <section class="hero" data-scroll-section>
-          <div class="bg" data-scroll-speed="1">
-            <img src="./public/img/me.png" alt="" />
+    <main data-scroll-container>
+      <section class="hero" id="home" data-scroll-section>
+        <div class="bg" data-scroll-speed="1">
+          <img src="./public/img/me.png" alt="" />
+        </div>
+        <div class="hero-content d-flex justify-content-center align-items-center">
+          <div class="container">
+            <div class="row g-5 d-flex justify-content-center align-items-center">
+              <div class="col-lg-4">
+                <h2>Hi semua 👋🏼</h2>
+                <h1>Ilyas disini!</h1>
+                <p class="mb-5">Full stack web developer | UI Design | Technical SEO. Let’s build something awesome!</p>
+                <a href="#about" class="mybtn">Kenalan Yuk!</a>
+              </div>
+              <div class="offset-lg-4 offset-0 col-lg-4">
+                <div class="tag-grb">
+                  <div class="stack p-2 m-1 rounded-3"><img src="./public/img/tech/bootstrap.webp" class="me-1" alt="" />Bootstrap</div>
+                  <div class="stack p-2 m-1 rounded-3"><img src="./public/img/tech/ci.webp" class="me-1" alt="" />Code Igniter</div>
+                  <div class="stack p-2 m-1 rounded-3"><img src="./public/img/tech/figma.webp" class="me-1" alt="" />Figma</div>
+                  <div class="stack p-2 m-1 rounded-3"><img src="./public/img/tech/photoshop.webp" class="me-1" alt="" />Photoshop</div>
+                  <div class="stack p-2 m-1 rounded-3"><img src="./public/img/tech/illustrator.webp" class="me-1" alt="" />Illustrator</div>
+                  <div class="stack p-2 m-1 rounded-3"><img src="./public/img/tech/jquery.webp" class="me-1" alt="" />jquery</div>
+                  <div class="stack p-2 m-1 rounded-3"><img src="./public/img/tech/laravel.webp" class="me-1" alt="" />Laravel</div>
+                  <div class="stack p-2 m-1 rounded-3"><img src="./public/img/tech/nextjs.webp" class="me-1" alt="" />Next Js</div>
+                  <div class="stack p-2 m-1 rounded-3"><img src="./public/img/tech/thailwind.webp" class="me-1" alt="" />Thailwind CSS</div>
+                  <div class="stack p-2 m-1 rounded-3"><img src="./public/img/tech/react.webp" class="me-1" alt="" />React Js</div>
+                  <div class="stack p-2 m-1 rounded-3"><img src="./public/img/tech/notion-line.webp" class="me-1" alt="" />Notion</div>
+                  <div class="stack p-2 m-1 rounded-3"><img src="./public/img/tech/ass.webp" class="me-1" alt="" />Sass</div>
+                  <div class="stack p-2 m-1 rounded-3"><img src="./public/img/tech/php.webp" class="me-1" alt="" />PHP</div>
+                  <div class="stack p-2 m-1 rounded-3"><img src="./public/img/tech/github.webp" class="me-1" alt="" />Github</div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="hero-content d-flex justify-content-center align-items-center">
-            <div class="container">
-              <div class="row g-5 d-flex justify-content-center align-items-center">
+        </div>
+      </section>
+      <section id="about" data-scroll-section data-scroll-target="#about">
+        <div class="about" data-scroll data-scroll-speed="1">
+          <div class="container">
+            <div class="wrapper">
+              <div class="header mb-5">
+                <h2>
+                  Selamat Datang <br />
+                  di Web Pribadi Saya
+                </h2>
+                <h6>Sedikit potensi diri saya <i class="fad fa-bullseye-arrow"></i></h6>
+              </div>
+              <div class="row g-4 mb-5">
                 <div class="col-lg-4">
-                  <h2>Hi semua 👋🏼</h2>
-                  <h1>Ilyas disini!</h1>
-                  <p class="mb-5">Full stack web developer | UI Design | Technical SEO. Let’s build something awesome!</p>
-                  <a href="#about" class="mybtn">Kenalan Yuk!</a>
+                  <div class="card p-2" style="background-color: #ff32a1">
+                    <div class="card-body">
+                      <h5 class="card-title mb-5">Front End</h5>
+                      <div class="card-text">
+                        <p>Saya bisa menjadi frontend developer dengan pengalaman saya menggunakan framework seperti bootstrap, tailwind, next js dsb.</p>
+                      </div>
+                      <div class="tool mt-5 d-flex justify-content-end align-items-center">
+                        <img src="./public/img/tech/bootstrap.webp" width="30" height="auto" alt="" />
+                        <img src="./public/img/tech/thailwind.webp" width="30" height="auto" alt="" />
+                        <img src="./public/img/tech/nextjs.webp" width="30" height="auto" alt="" />
+                        <img src="./public/img/tech/figma.webp" width="30" height="auto" alt="" />
+                        <img src="./public/img/tech/react.webp" width="30" height="auto" alt="" />
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="offset-lg-4 offset-0 col-lg-4">
-                  <div class="tag-grb">
-                    <div class="stack p-2 m-1 rounded-3"><img src="./public/img/tech/bootstrap.webp" class="me-1" alt="" />Bootstrap</div>
-                    <div class="stack p-2 m-1 rounded-3"><img src="./public/img/tech/ci.webp" class="me-1" alt="" />Code Igniter</div>
-                    <div class="stack p-2 m-1 rounded-3"><img src="./public/img/tech/figma.webp" class="me-1" alt="" />Figma</div>
-                    <div class="stack p-2 m-1 rounded-3"><img src="./public/img/tech/photoshop.webp" class="me-1" alt="" />Photoshop</div>
-                    <div class="stack p-2 m-1 rounded-3"><img src="./public/img/tech/illustrator.webp" class="me-1" alt="" />Illustrator</div>
-                    <div class="stack p-2 m-1 rounded-3"><img src="./public/img/tech/jquery.webp" class="me-1" alt="" />jquery</div>
-                    <div class="stack p-2 m-1 rounded-3"><img src="./public/img/tech/laravel.webp" class="me-1" alt="" />Laravel</div>
-                    <div class="stack p-2 m-1 rounded-3"><img src="./public/img/tech/nextjs.webp" class="me-1" alt="" />Next Js</div>
-                    <div class="stack p-2 m-1 rounded-3"><img src="./public/img/tech/thailwind.webp" class="me-1" alt="" />Thailwind CSS</div>
-                    <div class="stack p-2 m-1 rounded-3"><img src="./public/img/tech/react.webp" class="me-1" alt="" />React Js</div>
-                    <div class="stack p-2 m-1 rounded-3"><img src="./public/img/tech/notion-line.webp" class="me-1" alt="" />Notion</div>
-                    <div class="stack p-2 m-1 rounded-3"><img src="./public/img/tech/ass.webp" class="me-1" alt="" />Sass</div>
-                    <div class="stack p-2 m-1 rounded-3"><img src="./public/img/tech/php.webp" class="me-1" alt="" />PHP</div>
-                    <div class="stack p-2 m-1 rounded-3"><img src="./public/img/tech/github.webp" class="me-1" alt="" />Github</div>
+                <div class="col-lg-4">
+                  <div class="card p-2" style="background-color: #ff6276">
+                    <div class="card-body">
+                      <h5 class="card-title mb-5">Back End</h5>
+                      <div class="card-text">
+                        <p>Framework PHP masih menjadi titik ternyaman saya dalam mengolah data dari sisi server seperti Codeigniter dan Laravel.</p>
+                      </div>
+                      <div class="tool mt-5 d-flex justify-content-end align-items-center">
+                        <img src="./public/img/tech/ci.webp" width="30" height="auto" alt="" />
+                        <img src="./public/img/tech/laravel.webp" width="30" height="auto" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="card p-2" style="background-color: #ff9857">
+                    <div class="card-body">
+                      <h5 class="card-title mb-5">Add. Skill</h5>
+                      <div class="card-text">
+                        <p>Pemahaman lain yang sering saya gunakan dalam pengembangan web yaitu Js, Jquery terkadang dan library lain.</p>
+                      </div>
+                      <div class="tool mt-5 d-flex justify-content-end align-items-center">
+                        <img src="./public/img/tech/js.webp" width="30" height="auto" alt="" />
+                        <img src="./public/img/tech/jquery.webp" width="30" height="auto" alt="" />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-        <section id="about" data-scroll-section>
-          <div class="about" data-scroll data-scroll-speed="1">
+        </div>
+      </section>
+      <section class="sec2 pb-5" id="about_" data-scroll-section>
+        <div class="container h-100" data-scroll-speed="1">
+          <div class="row g-5 h-100">
+            <div class="col-lg-6 m-0 p-0">
+              <div class="avatar d-flex justify-content-center align-items-end act" id="avatar">
+                <div class="tali"></div>
+                <div class="hanging">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="227" height="95" viewBox="0 0 227 95" fill="none">
+                    <circle cx="113.267" cy="72.5" r="22" fill="#484738" />
+                    <path d="M1.76689 45.5C4.96689 38.7 76.2666 13.5 110.267 0C148.267 11.6667 213.267 33 223.267 45.5C228.313 51.8077 226.267 62.5 223.267 72.5H1.76689C0.433552 66.3334 -1.43311 52.3 1.76689 45.5Z" fill="#0D0D0D" />
+                  </svg>
+                </div>
+                <div class="light"></div>
+                <img src="./public/img/avatar.png" class="img-fluid" alt="" />
+                <div class="saklar" for="">
+                  <label for="">Klik!</label>
+                  <input type="checkbox" id="saklar" />
+                  <span><ion-icon name="bulb-outline"></ion-icon></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 d-flex align-items-center">
+              <div class="toggle act mb-3" id="toggle">
+                <h2 class="mb-5">Cerita di balik pengembangan web saya.</h2>
+                <div class="mb-5">
+                  <p>Nama saya Ilyas, seorang Fullstack Web Developer dengan spesialisasi di PHP. Sudah bertahun-tahun saya membantu klien mewujudkan ide mereka jadi aplikasi web yang nggak cuma keren, tapi juga berfungsi maksimal.</p>
+                  <p>Mulai dari bikin tampilan yang rapi sampai back-end yang cepat, semuanya saya handle dengan detail.</p>
+                  <p>Selain ngoding, saya juga suka belajar teknologi baru untuk tetap up-to-date dengan tren digital. Kalau Anda butuh partner buat ngebangun web atau aplikasi yang siap bersaing, mari kita ngobrol!</p>
+                </div>
+                <script>
+                  document.getElementById("saklar").addEventListener("change", function () {
+                    const audio = new Audio("./sound/light-switch-156813.mp3");
+                    if (this.checked) {
+                      audio.play();
+                      document.querySelectorAll(".act").forEach((element) => {
+                        element.classList.add("active");
+                      });
+                    } else {
+                      audio.play();
+                      document.querySelectorAll(".act").forEach((element) => {
+                        element.classList.remove("active");
+                      });
+                    }
+                  });
+                </script>
+                <a href="">Download CV</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="portofolio" id="portofolio" data-scroll-section="">
+        <div class="container" data-scroll-speed="1">
+          <div class="heading text-start mb-2">
+            <h2>Projek yang Telah Saya Bangun</h2>
+            <p>Berikut beberapa proyek yang sudah saya kerjakan untuk klien dan pribadi. <br />Setiap proyek adalah tantangan baru yang saya hadapi dengan antusias.</p>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="col-12">
+              <div class="row g-4 py-5">
+                <div class="col-lg-3 col-6">
+                  <div class="card border-1 rounded rounded-4 shadow-md">
+                    <div class="card-body p-0">
+                      <img src="./public/img/project/argha.webp" class="img-fluid" alt="" />
+                      <div class="card-text">
+                        <span>Argha Architect</span>
+                        <a href="">Lihat Project</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                  <div class="card border-1 rounded rounded-4 shadow-md">
+                    <div class="card-body p-0">
+                      <img src="./public/img/project/berlian.webp" class="img-fluid" alt="" />
+                      <div class="card-text">
+                        <span>PO. Berlian Jaya</span>
+                        <a href="">Lihat Project</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                  <div class="card border-1 rounded rounded-4 shadow-md">
+                    <div class="card-body p-0">
+                      <img src="./public/img/project/kebab.webp" class="img-fluid" alt="" />
+                      <div class="card-text">
+                        <span>Kebab SS</span>
+                        <a href="">Lihat Project</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                  <div class="card border-1 rounded rounded-4 shadow-md">
+                    <div class="card-body p-0">
+                      <img src="./public/img/project/kebabss.webp" class="img-fluid" alt="" />
+                      <div class="card-text">
+                        <span>Kebab SS</span>
+                        <a href="">Lihat Project</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="wrapper-tech" data-scroll-section id="pakaryan">
+        <div class="text-start" data-scroll data-scroll-speed="1">
+          <div class="wrapper">
             <div class="container">
-              <div class="wrapper">
-                <div class="header mb-5">
-                  <h2>
-                    Selamat Datang <br />
-                    di Web Pribadi Saya
-                  </h2>
-                  <h6>Sedikit potensi diri saya <i class="fad fa-bullseye-arrow"></i></h6>
+              <h2>Tech Stack</h2>
+              <h6>Tech Stack saya <i class="fad fa-cogs"></i></h6>
+            </div>
+          </div>
+          <div class="tech1 my-5 mb-4 d-flex justify-content-end align-items-center">
+            <div class="slidert g-3 d-flex justify-content-end align-items-center">
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/figma.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Figma</h4>
+                  <span>UI/UX Design</span>
                 </div>
-                <div class="row g-4 mb-5">
-                  <div class="col-lg-4">
-                    <div class="card p-2" style="background-color: #ff32a1">
-                      <div class="card-body">
-                        <h5 class="card-title mb-5">Front End</h5>
-                        <div class="card-text">
-                          <p>Saya bisa menjadi frontend developer dengan pengalaman saya menggunakan framework seperti bootstrap, tailwind, next js dsb.</p>
-                        </div>
-                        <div class="tool mt-5 d-flex justify-content-end align-items-center">
-                          <img src="./public/img/tech/bootstrap.webp" width="30" height="auto" alt="" />
-                          <img src="./public/img/tech/thailwind.webp" width="30" height="auto" alt="" />
-                          <img src="./public/img/tech/nextjs.webp" width="30" height="auto" alt="" />
-                          <img src="./public/img/tech/figma.webp" width="30" height="auto" alt="" />
-                          <img src="./public/img/tech/react.webp" width="30" height="auto" alt="" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4">
-                    <div class="card p-2" style="background-color: #ff6276">
-                      <div class="card-body">
-                        <h5 class="card-title mb-5">Back End</h5>
-                        <div class="card-text">
-                          <p>Framework PHP masih menjadi titik ternyaman saya dalam mengolah data dari sisi server seperti Codeigniter dan Laravel.</p>
-                        </div>
-                        <div class="tool mt-5 d-flex justify-content-end align-items-center">
-                          <img src="./public/img/tech/ci.webp" width="30" height="auto" alt="" />
-                          <img src="./public/img/tech/laravel.webp" width="30" height="auto" alt="" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4">
-                    <div class="card p-2" style="background-color: #ff9857">
-                      <div class="card-body">
-                        <h5 class="card-title mb-5">Add. Skill</h5>
-                        <div class="card-text">
-                          <p>Pemahaman lain yang sering saya gunakan dalam pengembangan web yaitu Js, Jquery terkadang dan library lain.</p>
-                        </div>
-                        <div class="tool mt-5 d-flex justify-content-end align-items-center">
-                          <img src="./public/img/tech/js.webp" width="30" height="auto" alt="" />
-                          <img src="./public/img/tech/jquery.webp" width="30" height="auto" alt="" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/thailwind.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Thailwind Css</h4>
+                  <span>CSS Framework</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/ci.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Codeigniter</h4>
+                  <span>PHP Framework</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/jquery.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Jquery</h4>
+                  <span>Js Library</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/js.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Javascript</h4>
+                  <span>Programming lang.</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/nextjs.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Next Js</h4>
+                  <span>Frontend Framework</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/php.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>PHP</h4>
+                  <span>Programming lang.</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/bootstrap.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Bootstrap</h4>
+                  <span>CSS Framework</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/flutter.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Flutter</h4>
+                  <span>Mobile Develeopment</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/laravel.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Laravel</h4>
+                  <span>PHP Framework</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/react.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>React Js</h4>
+                  <span>Front-End Development</span>
+                </div>
+              </div>
+            </div>
+            <div class="slidert g-2 d-flex justify-content-start align-items-center">
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/figma.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Figma</h4>
+                  <span>UI/UX Design</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/thailwind.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Thailwind Css</h4>
+                  <span>CSS Framework</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/ci.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Codeigniter</h4>
+                  <span>PHP Framework</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/jquery.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Jquery</h4>
+                  <span>Js Library</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/js.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Javascript</h4>
+                  <span>Programming lang.</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/nextjs.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Next Js</h4>
+                  <span>Frontend Framework</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/php.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>PHP</h4>
+                  <span>Programming lang.</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/bootstrap.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Bootstrap</h4>
+                  <span>CSS Framework</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/flutter.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Flutter</h4>
+                  <span>Mobile Develeopment</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/laravel.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Laravel</h4>
+                  <span>PHP Framework</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/react.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>React Js</h4>
+                  <span>Front-End Development</span>
+                </div>
+              </div>
+            </div>
+            <div class="slidert g-3 d-flex justify-content-start align-items-center">
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/figma.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Figma</h4>
+                  <span>UI/UX Design</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/thailwind.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Thailwind Css</h4>
+                  <span>CSS Framework</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/ci.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Codeigniter</h4>
+                  <span>PHP Framework</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/jquery.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Jquery</h4>
+                  <span>Js Library</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/js.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Javascript</h4>
+                  <span>Programming lang.</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/nextjs.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Next Js</h4>
+                  <span>Frontend Framework</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/php.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>PHP</h4>
+                  <span>Programming lang.</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/bootstrap.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Bootstrap</h4>
+                  <span>CSS Framework</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/flutter.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Flutter</h4>
+                  <span>Mobile Develeopment</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/laravel.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Laravel</h4>
+                  <span>PHP Framework</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/react.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>React Js</h4>
+                  <span>Front-End Development</span>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-        <section class="sec2 pb-5" id="about_" data-scroll-section>
-          <div class="container h-100" data-scroll-speed="1">
-            <div class="row g-5 h-100">
-              <div class="col-lg-6 m-0 p-0">
-                <div class="avatar d-flex justify-content-center align-items-end act" id="avatar">
-                  <div class="tali"></div>
-                  <div class="hanging">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="227" height="95" viewBox="0 0 227 95" fill="none">
-                      <circle cx="113.267" cy="72.5" r="22" fill="#484738" />
-                      <path d="M1.76689 45.5C4.96689 38.7 76.2666 13.5 110.267 0C148.267 11.6667 213.267 33 223.267 45.5C228.313 51.8077 226.267 62.5 223.267 72.5H1.76689C0.433552 66.3334 -1.43311 52.3 1.76689 45.5Z" fill="#0D0D0D" />
-                    </svg>
-                  </div>
-                  <div class="light"></div>
-                  <img src="./public/img/avatar.png" class="img-fluid" alt="" />
-                  <div class="saklar" for="">
-                    <label for="">Klik!</label>
-                    <input type="checkbox" id="saklar" />
-                    <span><ion-icon name="bulb-outline"></ion-icon></span>
-                  </div>
+
+          <div class="tech2 mb-5 pt-3 d-flex justify-content-start align-items-center" data-aos="fade-up" data-aos-duration="1500">
+            <div class="sliderb g-3 d-flex justify-content-start align-items-center">
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/figma.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Figma</h4>
+                  <span>UI/UX Design</span>
                 </div>
               </div>
-              <div class="col-lg-6 d-flex align-items-center">
-                <div class="toggle act mb-3" id="toggle">
-                  <h2 class="mb-5">Cerita di balik pengembangan web saya.</h2>
-                  <div class="mb-5">
-                    <p>Nama saya Ilyas, seorang Fullstack Web Developer dengan spesialisasi di PHP. Sudah bertahun-tahun saya membantu klien mewujudkan ide mereka jadi aplikasi web yang nggak cuma keren, tapi juga berfungsi maksimal.</p>
-                    <p>Mulai dari bikin tampilan yang rapi sampai back-end yang cepat, semuanya saya handle dengan detail.</p>
-                    <p>Selain ngoding, saya juga suka belajar teknologi baru untuk tetap up-to-date dengan tren digital. Kalau Anda butuh partner buat ngebangun web atau aplikasi yang siap bersaing, mari kita ngobrol!</p>
-                  </div>
-                  <script>
-                    document.getElementById("saklar").addEventListener("change", function () {
-                      const audio = new Audio("./sound/light-switch-156813.mp3");
-                      if (this.checked) {
-                        audio.play();
-                        document.querySelectorAll(".act").forEach((element) => {
-                          element.classList.add("active");
-                        });
-                      } else {
-                        audio.play();
-                        document.querySelectorAll(".act").forEach((element) => {
-                          element.classList.remove("active");
-                        });
-                      }
-                    });
-                  </script>
-                  <a href="">Download CV</a>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/thailwind.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Thailwind Css</h4>
+                  <span>CSS Framework</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/ci.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Codeigniter</h4>
+                  <span>PHP Framework</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/jquery.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Jquery</h4>
+                  <span>Js Library</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/js.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Javascript</h4>
+                  <span>Programming lang.</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/nextjs.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Next Js</h4>
+                  <span>Frontend Framework</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/php.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>PHP</h4>
+                  <span>Programming lang.</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/bootstrap.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Bootstrap</h4>
+                  <span>CSS Framework</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/flutter.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Flutter</h4>
+                  <span>Mobile Develeopment</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/laravel.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Laravel</h4>
+                  <span>PHP Framework</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/react.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>React Js</h4>
+                  <span>Front-End Development</span>
+                </div>
+              </div>
+            </div>
+            <div class="sliderb g-2 d-flex justify-content-start align-items-center">
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/figma.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Figma</h4>
+                  <span>UI/UX Design</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/thailwind.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Thailwind Css</h4>
+                  <span>CSS Framework</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/ci.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Codeigniter</h4>
+                  <span>PHP Framework</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/jquery.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Jquery</h4>
+                  <span>Js Library</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/js.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Javascript</h4>
+                  <span>Programming lang.</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/nextjs.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Next Js</h4>
+                  <span>Frontend Framework</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/php.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>PHP</h4>
+                  <span>Programming lang.</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/bootstrap.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Bootstrap</h4>
+                  <span>CSS Framework</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/flutter.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Flutter</h4>
+                  <span>Mobile Develeopment</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/laravel.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Laravel</h4>
+                  <span>PHP Framework</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/react.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>React Js</h4>
+                  <span>Front-End Development</span>
+                </div>
+              </div>
+            </div>
+            <div class="sliderb g-3 d-flex justify-content-start align-items-center">
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/figma.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Figma</h4>
+                  <span>UI/UX Design</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/thailwind.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Thailwind Css</h4>
+                  <span>CSS Framework</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/ci.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Codeigniter</h4>
+                  <span>PHP Framework</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/jquery.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Jquery</h4>
+                  <span>Js Library</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/js.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Javascript</h4>
+                  <span>Programming lang.</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/nextjs.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Next Js</h4>
+                  <span>Frontend Framework</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/php.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>PHP</h4>
+                  <span>Programming lang.</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/bootstrap.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Bootstrap</h4>
+                  <span>CSS Framework</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/flutter.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Flutter</h4>
+                  <span>Mobile Develeopment</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/laravel.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>Laravel</h4>
+                  <span>PHP Framework</span>
+                </div>
+              </div>
+              <div class="tech-item shadow mx-3 d-flex justify-content-start align-items-center">
+                <img src="./public/img/tech/react.webp" alt="agcenna assets" class="img-fluid" width="{500}" height="{500}" />
+                <div class="gtext text-start">
+                  <h4>React Js</h4>
+                  <span>Front-End Development</span>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-        <section class="portofolio" data-scroll-section="">
-          <div class="container" data-scroll-speed="1">
-            <div class="heading text-center mb-5">
-              <h2>Projek yang Telah Saya Bangun</h2>
-              <p>Berikut beberapa proyek yang sudah saya kerjakan untuk klien dan pribadi. <br />Setiap proyek adalah tantangan baru yang saya hadapi dengan antusias.</p>
+        </div>
+      </section>
+      <section id="contact" class="contact" data-scroll-section="">
+        <div class="container" data-scroll-speed="1">
+          <div class="heading text-center mb-5">
+            <div class="row d-flex justify-content-center align-items-center">
+              <h2>Mari Diskusikan Proyek Anda!</h2>
+              <div class="col-12 col-lg-6"><p>Jika Anda punya ide, proyek, atau sekadar ingin ngobrol soal teknologi, jangan ragu untuk menghubungi saya. Saya siap membantu!</p></div>
             </div>
-            <div class="row d-flex justify-content-center py-5">
-              <div class="col-12">
-                <div class="row g-4 py-5">
-                  <div class="col-lg-3 col-6">
-                    <div class="card border-1 rounded rounded-4 shadow-md">
-                      <div class="card-body p-0">
-                        <img src="./public/img/project/argha.webp" class="img-fluid" alt="" />
-                        <div class="card-text">
-                          <span>Argha Architect</span>
-                          <a href="">Lihat Project</a>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-6">
+              <div class="card border-0 p-5">
+                <div class="card-body">
+                  <form action="mailto:azok@agcenna.com" method="post" enctype="text/plain">
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="mb-3">
+                          <label for="name" class="form-label">Nama</label>
+                          <input type="text" class="form-control" id="name" name="Nama" placeholder="Nama Anda" required />
                         </div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-6">
-                    <div class="card border-1 rounded rounded-4 shadow-md">
-                      <div class="card-body p-0">
-                        <img src="./public/img/project/berlian.webp" class="img-fluid" alt="" />
-                        <div class="card-text">
-                          <span>PO. Berlian Jaya</span>
-                          <a href="">Lihat Project</a>
+                      <div class="col-6">
+                        <div class="mb-3">
+                          <label for="email" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="email" name="Email" placeholder="email@example.com" required />
                         </div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-6">
-                    <div class="card border-1 rounded rounded-4 shadow-md">
-                      <div class="card-body p-0">
-                        <img src="./public/img/project/kebab.webp" class="img-fluid" alt="" />
-                        <div class="card-text">
-                          <span>Kebab SS</span>
-                          <a href="">Lihat Project</a>
+                      <div class="col-12">
+                        <div class="mb-3">
+                          <label for="message" class="form-label">Pesan</label>
+                          <textarea class="form-control" id="message" name="Pesan" rows="4" placeholder="Tulis pesan Anda disini..." required></textarea>
                         </div>
+                        <button type="submit" class="w-100">Kirim Pesan</button>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-lg-3 col-6">
-                    <div class="card border-1 rounded rounded-4 shadow-md">
-                      <div class="card-body p-0">
-                        <img src="./public/img/project/kebabss.webp" class="img-fluid" alt="" />
-                        <div class="card-text">
-                          <span>Kebab SS</span>
-                          <a href="">Lihat Project</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  </form>
                 </div>
+              </div>
+
+              <!-- Social Links (Optional) -->
+              <div class="text-center mt-4">
+                <p>Atau hubungi saya melalui:</p>
+                <a href="https://wa.me/6285972597122?text=halo%20ilyas" target="_blank" class="mx-1 rounded-3" style="background: #1bcf57 !important">
+                  <i class="fab fa-whatsapp" style="color: #eeeeee"></i>
+                  Whatsapp
+                </a>
+                <a href="https://www.linkedin.com/in/ilyas-maazib-webdev/" target="_blank" class="mx-1 rounded-3" style="background: #2566c2">
+                  <i class="fab fa-linkedin" style="color: #eeeeee"></i>
+                  LinkedIn
+                </a>
+                <a href="https://github.com/ilydev-openproject" target="_blank" class="mx-1 rounded-3" style="background: #0c141f">
+                  <i class="fab fa-github" style="color: #eeeeee"></i>
+                  GitHub
+                </a>
               </div>
             </div>
           </div>
-        </section>
-      </main>
-    </div>
+        </div>
+      </section>
+    </main>
     <footer>
       <!-- place footer here -->
     </footer>
@@ -274,6 +823,22 @@
       const scroll = new LocomotiveScroll({
         el: document.querySelector("[data-scroll-container]"),
         smooth: true,
+      });
+
+      // Fungsi untuk berpindah menggunakan navlink
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("click", (event) => {
+          event.preventDefault(); // Mencegah aksi default link
+
+          // Ambil ID dari href link
+          const targetId = link.getAttribute("href").substring(1);
+          const targetElement = document.getElementById(targetId);
+
+          // Pindahkan ke target element
+          if (targetElement) {
+            scroll.scrollTo(targetElement);
+          }
+        });
       });
     </script>
   </body>
