@@ -3,9 +3,10 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  &::-webkit-scrollbar {
-    display: none;
-  }
+  scroll-behavior: smooth;
+  // &::-webkit-scrollbar {
+  //   display: none;
+  // }
 }
 a {
   text-decoration: none;
@@ -19,6 +20,7 @@ a {
   height: 80px;
   z-index: 100000;
   background: transparent;
+  backdrop-filter: blur(5px);
   .navbar-brand {
     font-family: "Roboto", sans-serif;
     font-size: 38px;
@@ -27,7 +29,8 @@ a {
   .nav-link {
     @include roboto();
     font-size: 16px;
-    color: #cbcbcb;
+    color: #cc34cd;
+    mix-blend-mode: hue;
   }
 }
 @media screen and (max-width: 992px) {
@@ -35,9 +38,9 @@ a {
     height: auto !important;
   }
   .navbar {
-    position: relative;
-    transform: 0;
-    height: 100%;
+    // position: relative;
+    // transform: 0;
+    // height: 100%;
   }
 }
 .hero {
@@ -55,7 +58,7 @@ a {
     align-items: center;
     img {
       width: 100%;
-      height: auto;
+      height: 100%;
       object-fit: cover;
       object-position: center bottom;
       filter: brightness(30%);
@@ -147,6 +150,101 @@ section {
   justify-content: center;
   align-items: center;
 }
+#about {
+  background: #f4f1ea;
+}
+.about {
+  height: auto;
+  .header {
+    h2 {
+      font-weight: 700;
+      font-size: 48px;
+    }
+    h6 {
+      font-weight: 300;
+      font-size: 28px;
+      i {
+        color: #fff;
+      }
+    }
+  }
+  .card {
+    border: none;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    .card-body {
+      h5 {
+        font-weight: 700;
+        color: #fff;
+        font-size: 24px;
+      }
+
+      .tool {
+        img {
+          margin: 0 4px;
+          height: 32px;
+          width: auto;
+        }
+      }
+      p {
+        color: #fff;
+        font-weight: 400;
+      }
+    }
+    &:hover {
+      transform: scale(1.1);
+      transition: 0.5s ease-in-out;
+    }
+  }
+  .profile {
+    .icon {
+      background-color: #fff;
+      border-radius: 50%;
+      aspect-ratio: 1/1;
+      i {
+        color: #c8c2ae;
+      }
+    }
+    // height: 600px;
+    @media screen and (max-width: 768px) {
+      height: auto !important;
+    }
+    .images {
+      img {
+        width: 100%;
+        height: 100%;
+        background-color: #212429;
+        clip-path: url(#masked);
+        border-radius: 20px;
+        box-shadow: 0px 4px 108.2px 0px rgba(0, 0, 0, 0.25);
+        object-position: top center;
+        padding: 0 200px;
+        @media screen and (max-width: 768px) {
+          padding: 0 100px;
+        }
+      }
+    }
+    .experience {
+      .btn-chat {
+        a {
+          background-color: #fff;
+          color: #fff;
+
+          &:hover {
+            background-color: #001213;
+          }
+        }
+      }
+      p {
+        font-weight: 400;
+        strong {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
 .sec2 {
   height: 100vh;
   background: #001213;
@@ -154,30 +252,33 @@ section {
   position: relative;
   z-index: 1;
   overflow: hidden;
-  &::after {
-    position: absolute;
-    content: "";
-    top: 0;
-    right: 0;
-    transform: translate(50%, -20%);
-    width: 80vh;
-    height: 80vh;
-    background: radial-gradient(50% 50% at 50% 50%, rgba(227, 67, 255, 0.5) 0%, rgba(136, 40, 153, 0) 100%);
-    border-radius: 50%;
-    z-index: 2 !important;
-  }
-  &::before {
-    position: absolute;
-    content: "";
-    bottom: 0;
-    left: 0;
-    transform: translate(-50%, 50%);
-    width: 80vh;
-    height: 80vh;
-    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 98, 173, 0.5) 0%, rgba(170, 55, 110, 0) 100%);
-    border-radius: 50%;
-    z-index: 6 !important;
-  }
+  // &::after {
+  //   position: absolute;
+  //   content: "";
+  //   top: 0;
+  //   left: 0;
+  //   width: 80vh;
+  //   height: 80vh;
+  //   background: radial-gradient(50% 50% at 50% 50%, rgba(227, 67, 255, 0.5) 0%, rgba(136, 40, 153, 0) 100%);
+  //   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 400'%3E%3Cpath d='M33.632286071777344,365.0224304199219C46.337816874186196,368.3109181722005,106.12855021158855,403.8863932291667,109.86547088623047,384.75335693359375C113.60239156087239,365.6203206380208,35.87443669637044,256.5022379557292,56.053810119628906,250.22421264648438C76.23318354288737,243.9461873372396,214.94768905639648,364.8729476928711,230.94171142578125,347.085205078125C246.93573379516602,329.2974624633789,133.48281860351562,147.3841552734375,152.0179443359375,143.4977569580078C170.55307006835938,139.61135864257812,318.8340810139974,340.95665041605633,342.1524658203125,323.7668151855469C365.4708506266276,306.5769799550374,268.75934346516925,45.73991012573242,291.9282531738281,40.35874557495117C315.097162882487,34.97758102416992,457.99701436360675,278.6248200734456,481.1659240722656,291.4798278808594C504.3348337809245,304.33483568827313,425.11211649576825,139.4618886311849,430.94171142578125,117.4887924194336C436.77130635579425,95.5156962076823,498.9536641438802,168.0119539896647,516.1434936523438,159.64125061035156C533.3333231608073,151.27054723103842,531.0911560058594,82.66068522135417,534.0806884765625,67.26457214355469' fill='none' stroke-width='25' stroke='url(%23SvgjsLinearGradient1002)' stroke-linecap='round' transform='matrix(0.9476249999999999,0,0,0.9476249999999999,14.866983321189878,11.277538825988785)'/%3E%3Cdefs%3E%3ClinearGradient id='SvgjsLinearGradient1002'%3E%3Cstop stop-color='hsl(37, 99%25, 67%25)' offset='0'/%3E%3Cstop stop-color='hsl(316, 73%25, 52%25)' offset='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
+  //   background-repeat: no-repeat;
+  //   border-radius: 50%;
+  //   filter: brightness(25%);
+  //   z-index: 6 !important;
+  // }
+
+  // &::before {
+  //   position: absolute;
+  //   content: "";
+  //   bottom: 0;
+  //   right: 0;
+  //   transform: translate(50%, -20%);
+  //   width: 80vh;
+  //   height: 80vh;
+
+  //   border-radius: 50%;
+  //   z-index: 5 !important;
+  // }
   .avatar {
     position: relative;
     width: 100%;
@@ -346,7 +447,7 @@ section {
   .toggle {
     h2 {
       font-family: "Roboto", sans-serif;
-      font-size: 28px;
+      font-size: 48px;
       font-weight: 600;
       color: #cbcbcb;
     }
@@ -393,6 +494,9 @@ section {
         }
       }
     }
+    a {
+      @include button;
+    }
   }
   .active {
     p {
@@ -414,9 +518,11 @@ section {
 }
 
 .portofolio {
+  background: #f4f1ea;
   .heading {
     h2 {
       font-size: 48px;
+      font-weight: 700;
       @include roboto();
     }
   }

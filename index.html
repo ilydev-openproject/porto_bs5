@@ -14,42 +14,42 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
     <!-- locomotive -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" />
   </head>
 
   <body>
-    <header></header>
-    <div>
-      <main>
-        <section class="hero">
-          <!-- place navbar here -->
-          <nav class="navbar navbar-expand-sm bg-transparent">
-            <div class="container">
-              <a class="navbar-brand" href="#">
-                <img src="./public/img/LOGO.png" class="img-fluid" alt="" />
-              </a>
-              <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="collapsibleNavId">
-                <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-                  <li class="nav-item me-3">
-                    <a class="nav-link" href="#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
-                  </li>
-                  <li class="nav-item me-3">
-                    <a class="nav-link" href="#about">About</a>
-                  </li>
-                  <li class="nav-item me-3">
-                    <a class="nav-link" href="#">Portofolio</a>
-                  </li>
-                  <li class="nav-item me-3">
-                    <a class="nav-link" href="#">Contact</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-          <div class="bg">
+    <header>
+      <!-- place navbar here -->
+      <nav class="navbar navbar-expand-sm bg-transparent">
+        <div class="container" data-scroll data-scroll-speed="1">
+          <a class="navbar-brand" href="#">
+            <img src="./public/img/LOGO.png" class="img-fluid" alt="" />
+          </a>
+          <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+              <li class="nav-item me-3">
+                <a class="nav-link" href="#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="#">Portofolio</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+      <main data-scroll-container>
+        <section class="hero" data-scroll-section>
+          <div class="bg" data-scroll-speed="1">
             <img src="./public/img/me.png" alt="" />
           </div>
           <div class="hero-content d-flex justify-content-center align-items-center">
@@ -83,9 +83,71 @@
             </div>
           </div>
         </section>
-        <section class="sec2" id="about">
-          <div class="container h-100">
-            <div class="row h-100">
+        <section id="about" data-scroll-section>
+          <div class="about" data-scroll data-scroll-speed="1">
+            <div class="container">
+              <div class="wrapper">
+                <div class="header mb-5">
+                  <h2>
+                    Selamat Datang <br />
+                    di Web Pribadi Saya
+                  </h2>
+                  <h6>Sedikit potensi diri saya <i class="fad fa-bullseye-arrow"></i></h6>
+                </div>
+                <div class="row g-4 mb-5">
+                  <div class="col-lg-4">
+                    <div class="card p-2" style="background-color: #ff32a1">
+                      <div class="card-body">
+                        <h5 class="card-title mb-5">Front End</h5>
+                        <div class="card-text">
+                          <p>Saya bisa menjadi frontend developer dengan pengalaman saya menggunakan framework seperti bootstrap, tailwind, next js dsb.</p>
+                        </div>
+                        <div class="tool mt-5 d-flex justify-content-end align-items-center">
+                          <img src="./public/img/tech/bootstrap.webp" width="30" height="auto" alt="" />
+                          <img src="./public/img/tech/thailwind.webp" width="30" height="auto" alt="" />
+                          <img src="./public/img/tech/nextjs.webp" width="30" height="auto" alt="" />
+                          <img src="./public/img/tech/figma.webp" width="30" height="auto" alt="" />
+                          <img src="./public/img/tech/react.webp" width="30" height="auto" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="card p-2" style="background-color: #ff6276">
+                      <div class="card-body">
+                        <h5 class="card-title mb-5">Back End</h5>
+                        <div class="card-text">
+                          <p>Framework PHP masih menjadi titik ternyaman saya dalam mengolah data dari sisi server seperti Codeigniter dan Laravel.</p>
+                        </div>
+                        <div class="tool mt-5 d-flex justify-content-end align-items-center">
+                          <img src="./public/img/tech/ci.webp" width="30" height="auto" alt="" />
+                          <img src="./public/img/tech/laravel.webp" width="30" height="auto" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="card p-2" style="background-color: #ff9857">
+                      <div class="card-body">
+                        <h5 class="card-title mb-5">Add. Skill</h5>
+                        <div class="card-text">
+                          <p>Pemahaman lain yang sering saya gunakan dalam pengembangan web yaitu Js, Jquery terkadang dan library lain.</p>
+                        </div>
+                        <div class="tool mt-5 d-flex justify-content-end align-items-center">
+                          <img src="./public/img/tech/js.webp" width="30" height="auto" alt="" />
+                          <img src="./public/img/tech/jquery.webp" width="30" height="auto" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="sec2 pb-5" id="about_" data-scroll-section>
+          <div class="container h-100" data-scroll-speed="1">
+            <div class="row g-5 h-100">
               <div class="col-lg-6 m-0 p-0">
                 <div class="avatar d-flex justify-content-center align-items-end act" id="avatar">
                   <div class="tali"></div>
@@ -105,11 +167,13 @@
                 </div>
               </div>
               <div class="col-lg-6 d-flex align-items-center">
-                <div class="toggle act" id="toggle">
-                  <h2 class="mb-3">Tekan tombol lampu untuk mengungkap lebih banyak cerita di balik pengembangan aplikasi web saya.</h2>
-                  <p>Nama saya Ilyas, seorang Fullstack Web Developer dengan spesialisasi di PHP. Sudah bertahun-tahun saya membantu klien mewujudkan ide mereka jadi aplikasi web yang nggak cuma keren, tapi juga berfungsi maksimal.</p>
-                  <p>Mulai dari bikin tampilan yang rapi sampai back-end yang cepat, semuanya saya handle dengan detail.</p>
-                  <p>Selain ngoding, saya juga suka belajar teknologi baru untuk tetap up-to-date dengan tren digital. Kalau Anda butuh partner buat ngebangun web atau aplikasi yang siap bersaing, mari kita ngobrol!</p>
+                <div class="toggle act mb-3" id="toggle">
+                  <h2 class="mb-5">Cerita di balik pengembangan web saya.</h2>
+                  <div class="mb-5">
+                    <p>Nama saya Ilyas, seorang Fullstack Web Developer dengan spesialisasi di PHP. Sudah bertahun-tahun saya membantu klien mewujudkan ide mereka jadi aplikasi web yang nggak cuma keren, tapi juga berfungsi maksimal.</p>
+                    <p>Mulai dari bikin tampilan yang rapi sampai back-end yang cepat, semuanya saya handle dengan detail.</p>
+                    <p>Selain ngoding, saya juga suka belajar teknologi baru untuk tetap up-to-date dengan tren digital. Kalau Anda butuh partner buat ngebangun web atau aplikasi yang siap bersaing, mari kita ngobrol!</p>
+                  </div>
                   <script>
                     document.getElementById("saklar").addEventListener("change", function () {
                       const audio = new Audio("./sound/light-switch-156813.mp3");
@@ -126,80 +190,63 @@
                       }
                     });
                   </script>
+                  <a href="">Download CV</a>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section class="portofolio">
-          <div class="container">
+        <section class="portofolio" data-scroll-section="">
+          <div class="container" data-scroll-speed="1">
             <div class="heading text-center mb-5">
               <h2>Projek yang Telah Saya Bangun</h2>
               <p>Berikut beberapa proyek yang sudah saya kerjakan untuk klien dan pribadi. <br />Setiap proyek adalah tantangan baru yang saya hadapi dengan antusias.</p>
             </div>
-            <div class="row g-4">
-              <div class="col-lg-3 col-6">
-                <div class="card border-1 rounded rounded-2">
-                  <div class="card-body p-0">
-                    <img src="./public/img/project/argha.webp" class="img-fluid" alt="" />
-                    <div class="card-text">
-                      <span>Argha Architect</span>
-                      <a href="">Lihat Project</a>
+            <div class="row d-flex justify-content-center py-5">
+              <div class="col-12">
+                <div class="row g-4 py-5">
+                  <div class="col-lg-3 col-6">
+                    <div class="card border-1 rounded rounded-4 shadow-md">
+                      <div class="card-body p-0">
+                        <img src="./public/img/project/argha.webp" class="img-fluid" alt="" />
+                        <div class="card-text">
+                          <span>Argha Architect</span>
+                          <a href="">Lihat Project</a>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-6">
-                <div class="card border-1 rounded rounded-2">
-                  <div class="card-body p-0">
-                    <img src="./public/img/project/berlian.webp" class="img-fluid" alt="" />
-                    <div class="card-text">
-                      <span>Argha Architect</span>
-                      <a href="">Lihat Project</a>
+                  <div class="col-lg-3 col-6">
+                    <div class="card border-1 rounded rounded-4 shadow-md">
+                      <div class="card-body p-0">
+                        <img src="./public/img/project/berlian.webp" class="img-fluid" alt="" />
+                        <div class="card-text">
+                          <span>PO. Berlian Jaya</span>
+                          <a href="">Lihat Project</a>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-6">
-                <div class="card border-1 rounded rounded-2">
-                  <div class="card-body p-0">
-                    <img src="./public/img/project/berlian.webp" class="img-fluid" alt="" />
-                    <div class="card-text">
-                      <span>Argha Architect</span>
-                      <a href="">Lihat Project</a>
+                  <div class="col-lg-3 col-6">
+                    <div class="card border-1 rounded rounded-4 shadow-md">
+                      <div class="card-body p-0">
+                        <img src="./public/img/project/kebab.webp" class="img-fluid" alt="" />
+                        <div class="card-text">
+                          <span>Kebab SS</span>
+                          <a href="">Lihat Project</a>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-6">
-                <div class="card border-1 rounded rounded-2">
-                  <div class="card-body p-0">
-                    <img src="./public/img/project/argha.webp" class="img-fluid" alt="" />
-                    <div class="card-text">
-                      <span>Argha Architect</span>
-                      <a href="">Lihat Project</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-6">
-                <div class="card border-1 rounded rounded-2">
-                  <div class="card-body p-0">
-                    <img src="./public/img/project/argha.webp" class="img-fluid" alt="" />
-                    <div class="card-text">
-                      <span>Argha Architect</span>
-                      <a href="">Lihat Project</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-6">
-                <div class="card border-1 rounded rounded-2">
-                  <div class="card-body p-0">
-                    <img src="./public/img/project/argha.webp" class="img-fluid" alt="" />
-                    <div class="card-text">
-                      <span>Argha Architect</span>
-                      <a href="">Lihat Project</a>
+                  <div class="col-lg-3 col-6">
+                    <div class="card border-1 rounded rounded-4 shadow-md">
+                      <div class="card-body p-0">
+                        <img src="./public/img/project/kebabss.webp" class="img-fluid" alt="" />
+                        <div class="card-text">
+                          <span>Kebab SS</span>
+                          <a href="">Lihat Project</a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -216,13 +263,18 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
-
     <!-- icon -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script>
+      const scroll = new LocomotiveScroll({
+        el: document.querySelector("[data-scroll-container]"),
+        smooth: true,
+      });
+    </script>
   </body>
 </html>
