@@ -685,8 +685,13 @@ section {
       @include button;
     }
   }
-  a {
-    text-decoration: none;
-    @include button;
+  .medsos {
+    .btngroup {
+      height: 100%;
+      a {
+        text-decoration: none;
+        @include button;
+      }
+    }
   }
 }

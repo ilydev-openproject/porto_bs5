@@ -720,7 +720,10 @@ section {
 .contact form button:hover {
   background: #9d9d9d;
 }
-.contact a {
+.contact .medsos .btngroup {
+  height: 100%;
+}
+.contact .medsos .btngroup a {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -731,6 +734,6 @@ section {
   text-wrap: nowrap;
   cursor: pointer !important;
 }
-.contact a:hover {
+.contact .medsos .btngroup a:hover {
   background: #9d9d9d;
 }
